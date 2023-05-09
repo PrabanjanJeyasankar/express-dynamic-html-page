@@ -39,6 +39,7 @@ userRouter.get('/:id([0-9]{1})' , (request,response) => {
 })
 
 userRouter.post('/',(request,response)=>{
+    console.log(request)
     ListOfServices.push({name:request.body.FirstName,
                         cost:request.body.ServiceCost,
                         duration:request.body.ServiceDuration})
